@@ -1,0 +1,28 @@
+<html>
+<head>
+	<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0">
+	<title>Progress bar</title>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link type="text/css"  id="pagestyle" rel="stylesheet" href="style.css">
+	<script charset="utf-8"></script>
+	<script src="script.js"></script>
+</head>
+<body bgcolor="#20112a">
+	<div id="maincontainer">
+		<div id="progressbar">
+			<div id="fill"></div>		
+		</div>
+		<h class="text" id="percentage"></h>
+		<h class="text" id="fraction"></h>
+		<div class="button" id="incbutton" onclick="buttonClick()">+1</div>
+		<div  class="button" id="backbutton" onclick="backButtonClick()">Back</div>
+		<audio id="inc" src="audio/inc.mp3"/>
+		<audio id="fin" src="audio/fin.mp3"/>
+	</div>	
+	<div id="popup">
+		<h3>Start by setting your goal!</h3>
+		<input id="goalinput" type="number"/>
+		<div id="popupbutton" onclick="goClick()">Let's go!</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+body {
+    -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+}
+
+#maincontainer {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    left: calc(50% - 250px);
+    top: calc(50% - 150px);
+    display: none;
+    opacity: 0;
+    transition: opacity ease 0.5s;
+}
+
+#progressbar {
+    position: absolute;
+    height: 25px;
+    width: 500px;
+    top: 60px;
+    left: 0;
+    background-color: #2e2037;
+    border-radius: 1rem;
+    transition: top ease 0.1s;
+}
+
+#fill {
+    height: 100%;
+    left: 0px;
+    width: 0%;
+    background: linear-gradient(to right,#ffc350,#e80781);
+    background-attachment: fixed;
+    background-size: 500px;
+    background-position: center;
+    border-radius: 1rem;
+    transition: width ease 0.5s;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35pt;
+    color: white;
+    top: 0;
+    transition: top ease 0.1s;
+}
+
+#percentage {
+    left: 0;
+}
+
+#fraction {
+    right: 0px;
+}
+
+.button {
+    position: absolute;
+    height: 3rem;
+    width: 8rem;
+    background-color: #2e2037;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: background-color ease-in-out 0.1s, color ease-in-out 0.1s;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18pt;
+    color: #e3e3e3;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.button:hover {
+    background-color: #352a3c;
+    color: white;
+}
+
+.button:active {
+    background-color: #3b3042;
+}
+
+#incbutton {
+    bottom: 0px;
+    left: calc(50% + 1rem);
+}
+
+#backbutton {
+    bottom: 0px;
+    right: calc(50% + 1rem);
+}
+
+#popup {
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    left: calc(50% - 150px);
+    top: calc(50% - 175px);
+    background-color: #2e2036;
+    border-radius: 0.8rem;
+    transition: opacity ease 0.5s;
+}
+
+#popup h3 {
+    position: absolute;
+    top: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 170px;
+    left: calc(50% - 85px);
+    font-weight: 700;
+    font-size: 18pt;
+    color: white;
+    text-align: left;
+    line-height: 1.7rem;
+}
+
+#goalinput {
+    position: absolute;
+    width: 150px;
+    left: calc(50% - 75px);
+    top: 120px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    background-color: #3b3042;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 12pt;
+    color: white;
+    border: 3px solid #3b3042;
+    transition: border ease 1s;
+}
+
+#goalinput:focus {
+    border: 3px solid #56475f;
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#popupbutton {
+    position: absolute;
+    height: 3rem;
+    width: 8rem;
+    background-color: #63c76d;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: background-color ease-in-out 0.1s, color ease-in-out 0.1s;
+    top: 250px;
+    left: calc(50% - 4rem);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+    color: white;
+    text-align: center;
+    line-height: 3rem;
+}
+
+#popupbutton:hover {
+    background-color: #6dd877;
+}
+
+#popupbutton:active {
+    background-color: #7ce686;
+}
